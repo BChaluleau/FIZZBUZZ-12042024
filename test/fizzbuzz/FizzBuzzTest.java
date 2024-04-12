@@ -37,4 +37,8 @@ class FizzBuzzTest {
 
 	}
 
+	@Test
+	void fizzBuzzCinq() {
+		assertEquals("buzz", fb.game(5));
+	}
 }
