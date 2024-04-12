@@ -7,10 +7,14 @@ public class FizzBuzz {
 
 	public String game(int turn) {
 
+		StringBuilder sb = new StringBuilder();
+
 		for (int i = 0; i < MAGIC_NUMBERS.length; i++) {
 			if (turn % MAGIC_NUMBERS[i] == 0)
-				return MAGIC_VALUES[i];
+				sb.append(MAGIC_VALUES[i]);
 		}
+		if (!sb.isEmpty())
+			return sb.toString();
 
 		return String.format("%d", turn);
 	}

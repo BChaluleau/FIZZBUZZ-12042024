@@ -48,8 +48,6 @@ class FizzBuzzTest {
 		assertEquals("fizz", fb.game(6));
 		assertEquals("fizz", fb.game(9));
 		assertEquals("fizz", fb.game(12));
-		assertEquals("fizz", fb.game(15));
-		assertEquals("fizz", fb.game(300));
 	}
 
 	@Test
@@ -57,4 +55,11 @@ class FizzBuzzTest {
 		assertEquals("buzz", fb.game(10));
 		assertEquals("buzz", fb.game(500));
 	}
+
+	@Test
+	void fizzBuzzCombo() {
+		assertEquals("fizzbuzz", fb.game(15));
+		assertEquals("fizzbuzz", fb.game(30));
+	}
+
 }
