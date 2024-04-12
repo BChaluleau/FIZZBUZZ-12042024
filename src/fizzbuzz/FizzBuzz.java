@@ -8,7 +8,7 @@ public class FizzBuzz {
 	public String game(int turn) {
 
 		for (int i = 0; i < MAGIC_NUMBERS.length; i++) {
-			if (turn == MAGIC_NUMBERS[i])
+			if (turn % MAGIC_NUMBERS[i] == 0)
 				return MAGIC_VALUES[i];
 		}
 

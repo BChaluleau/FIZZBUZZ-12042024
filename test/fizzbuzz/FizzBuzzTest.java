@@ -41,4 +41,13 @@ class FizzBuzzTest {
 	void fizzBuzzCinq() {
 		assertEquals("buzz", fb.game(5));
 	}
+
+	@Test
+	void fizzBuzz3Multiples() {
+		assertEquals("fizz", fb.game(6));
+		assertEquals("fizz", fb.game(9));
+		assertEquals("fizz", fb.game(12));
+		assertEquals("fizz", fb.game(15));
+		assertEquals("fizz", fb.game(300));
+	}
 }
